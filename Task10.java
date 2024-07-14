@@ -1,9 +1,8 @@
-
-import java.util.Scanner;
-
 // 10. Write a program that prompts the user to enter a sentence and reads it into a string. The program should consist of the following methods:
 //  A method named “countVowels" that reads a string and returns the number of vowels in the string.
 //  A method named “countConsonants” that reads a string and returns the number of consonants in the string. Invoke the above methods and demonstrate them in the program.
+
+import java.util.Scanner;
 
 public class Task10 {
 
@@ -11,7 +10,7 @@ public class Task10 {
         // params get the user input and the vowels array
         int count = 0;
         for (int i = 0; i < userInput.length(); i++) {
-            for (int j = 0; j < vowels.length; j++) {
+            for (char j : vowels) {
                 if (userInput.charAt(i) == vowels[j]) {
                     count++;
                 }
