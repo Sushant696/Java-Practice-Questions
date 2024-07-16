@@ -5,7 +5,75 @@
 
 public class Task5 {
     public static void main(String[] args) {
-        System.out.println("Task 5: Design and implement a Java program that simulates a network monitoring system.");
+        Router router = new Router("Connected", true);
+        System.out.println("Router Status: " + router.getStatus());
+        System.out.println("Router Available: " + router.isAvailable());
+
+    }
+}
+
+interface NetworkDevice {
+    public String getStatus();
+
+    public boolean isAvailable();
+}
+
+class Router implements NetworkDevice {
+    private String status;
+    private boolean available;
+
+    public Router(String status, boolean available) {
+        this.status = status;
+        this.available = available;
     }
 
+    @Override
+    public String getStatus() {
+        return status;
+    }
+
+    @Override
+    public boolean isAvailable() {
+        return available;
+    }
+}
+
+class Switch implements NetworkDevice {
+    private String status;
+    private boolean available;
+
+    public Switch(String status, boolean available) {
+        this.status = status;
+        this.available = available;
+    }
+
+    @Override
+    public String getStatus() {
+        return status;
+    }
+
+    @Override
+    public boolean isAvailable() {
+        return available;
+    }
+}
+
+class Hub implements NetworkDevice {
+    private String status;
+    private boolean available;
+
+    public Hub(String status, boolean available) {
+        this.status = status;
+        this.available = available;
+    }
+
+    @Override
+    public String getStatus() {
+        return status;
+    }
+
+    @Override
+    public boolean isAvailable() {
+        return available;
+    }
 }
