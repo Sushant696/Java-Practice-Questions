@@ -20,7 +20,6 @@ public class Task8 {
         } catch (InvalidEmailException e) {
             System.out.println("Invalid Input: " + e.getMessage());
 
-        } finally {
         }
         return email;
     }
