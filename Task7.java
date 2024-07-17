@@ -25,7 +25,7 @@ public class Task7 {
 }
 
 class InvalidStringLengthException extends Exception {
-    public InvalidStringLengthException(String message) {
+     InvalidStringLengthException(String message) {
         super(message);
     }
 }
