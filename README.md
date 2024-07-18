@@ -1,1 +1,2 @@
-These are the question for java:- Sem II Practice Questions.
+These are the question for Object Oriented Programming (OOP) module:-
+Sem II Practice Questions.
